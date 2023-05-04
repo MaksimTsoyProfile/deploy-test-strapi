@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  test-deploy-strapi:
+    build: .
+    container_name: test-deploy-strapi
+    restart: always
+    command:
+      "npm run start"
+    ports:
+      - "1337:1337"
